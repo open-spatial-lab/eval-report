@@ -20,6 +20,8 @@ summary_stats <- summary(data_scores)
 # Summary stats table
 st(data_scores, add.median = TRUE)
 
+st(data_scores)
+
 # What field does your organization primarily work in? 
 
 sum(grepl("Education", data$What.field.does.your.organization.primarily.work.in.))
@@ -70,3 +72,5 @@ staff <- data %>%
 
 staff_t <- t(staff)
 write.csv(staff_t, "outputs/staff.csv")  
+
+
